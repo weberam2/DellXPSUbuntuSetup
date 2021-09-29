@@ -27,8 +27,8 @@ The Nvidia drivers weren’t installed by default.
 
 ```console
 sudo ubuntu-drivers autoinstall
-sudo reboot
 ```
+Replace "quiet splash" with "nomodeset" in /etc/default/grub
 
 After rebooting you can confirm that your drivers are active by running the nvidia-smi command from a terminal window which will either print driver information or an error similar to “NVIDIA-SMI has failed because it couldn’t communicate with the NVIDIA driver” if the driver is not active.
 
