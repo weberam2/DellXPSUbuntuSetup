@@ -3,6 +3,8 @@ So you fried your laptop again...
 
 I found this handy: https://medium.com/@asad.manji/my-journey-installing-ubuntu-20-04-on-the-dell-xps-15-9500-2020-8ac8560373d1
 
+**NOTE: IF AT ANY TIME YOU GET THE BLACK SCREEN WITH A BLINKING CURSOR, PRESS CTRL+ALT+F# KEYS UNTIL THE LOGIN SCREEN APPEARS**
+
 ## Install Ubuntu 20.04
 Insert your bootable Ubuntu USB Stick, restart and hit F12 when you see the Dell logo to access the boot menu.  
 Once you’re into Ubuntu, click on the “Install Ubuntu” icon and follow the installer wizard.  
@@ -28,7 +30,12 @@ The Nvidia drivers weren’t installed by default.
 ```console
 sudo ubuntu-drivers autoinstall
 ```
-Replace "quiet splash" with "nomodeset" in /etc/default/grub
+Add "nomodeset" next to "quiet splash" in /etc/default/grub
+
+```console
+sudo update-grub
+```
+
 
 After rebooting you can confirm that your drivers are active by running the nvidia-smi command from a terminal window which will either print driver information or an error similar to “NVIDIA-SMI has failed because it couldn’t communicate with the NVIDIA driver” if the driver is not active.
 
