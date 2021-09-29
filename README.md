@@ -96,7 +96,6 @@ Download: https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2020.03.04
 ```console
 sudo dpkg -i dropbox_2020.03.04_amd64.deb
 ```
-Go to folder you want restored, right click, and "Restore to Previous Version"
 
 ## Slack
 https://slack.com/intl/en-ca/downloads/instructions/ubuntu
