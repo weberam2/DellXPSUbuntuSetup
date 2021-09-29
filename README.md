@@ -97,6 +97,28 @@ Download: https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2020.03.04
 sudo dpkg -i dropbox_2020.03.04_amd64.deb
 ```
 
+## Zoom
+
+https://zoom.us/download?os=linux
+
+```console
+sudo apt install ./zoom_amd64.deb
+```
+
+## Todoist
+
+```console
+sudo apt update
+sudo apt install snapd
+sudo snap install todoist
+```
+
+## Calendar
+
+```console
+sudo apt-get install -y gnome-calendar
+```
+
 ## Slack
 https://slack.com/intl/en-ca/downloads/instructions/ubuntu
 
@@ -120,3 +142,11 @@ sudo apt update
 sudo apt upgrade
 sudo apt install libreoffice
 ```
+
+## Misc
+```console
+sudo aptitude install htop
+sudo aptitude install xclip
+sudo aptitude install imagemagick
+```
+
