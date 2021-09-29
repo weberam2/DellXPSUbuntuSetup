@@ -67,3 +67,40 @@ then:
 ```console
 sudo ./displaylink-driver-5.3.0.xx.run
 ```
+## Recover Backup
+
+```console
+sudo apt-get install deja-dup
+```
+
+## Thunderbird
+
+```console
+sudo aptitude install thunderbird
+```
+http://weberlab.wikidot.com/thunderbird
+
+## Mattermost
+
+```console
+wget https://releases.mattermost.com/desktop/4.7.2/mattermost-desktop-4.7.2-linux-amd64.deb
+sudo dpkg -i mattermost-desktop-4.7.2-linux-amd64.deb
+sudo apt-get -f install
+```
+
+## Dropbox
+
+Download: https://www.dropbox.com/download?dl=packages/ubuntu/dropbox_2020.03.04_amd64.deb
+
+```console
+sudo dpkg -i dropbox_2020.03.04_amd64.deb
+```
+Go to folder you want restored, right click, and "Restore to Previous Version"
+
+## Slack
+https://slack.com/intl/en-ca/downloads/instructions/ubuntu
+
+```console
+sudo dpkg -i slack-desktop-4.20.0-amd64.deb
+```
+
