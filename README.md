@@ -113,3 +113,11 @@ echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sou
 sudo apt update
 sudo aptitude install spotify-client
 ```
+## LibreOffice
+
+```console
+sudo add-apt-repository ppa:libreoffice/ppa
+sudo apt update
+sudo apt upgrade
+sudo apt install libreoffice
+```
