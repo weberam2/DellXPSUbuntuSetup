@@ -103,4 +103,12 @@ https://slack.com/intl/en-ca/downloads/instructions/ubuntu
 ```console
 sudo dpkg -i slack-desktop-4.20.0-amd64.deb
 ```
+## Spotify
 
+```console
+sudo aptitude install curl
+curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add -
+echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
+sudo apt update
+sudo aptitude install spotify-client
+```
