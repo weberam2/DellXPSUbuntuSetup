@@ -35,15 +35,18 @@ The Nvidia drivers weren’t installed by default.
 ```console
 sudo ubuntu-drivers autoinstall
 ```
+<!--
 Add "nomodeset" next to "quiet splash" in /etc/default/grub
 
 ```console
 sudo update-grub
 ```
+-->
 
 After rebooting you can confirm that your drivers are active by running the nvidia-smi command from a terminal window which will either print driver information or an error similar to “NVIDIA-SMI has failed because it couldn’t communicate with the NVIDIA driver” if the driver is not active.
 
 ## Display Link
+<!-- 
 https://github.com/AdnanHodzic/displaylink-debian
 
 ```console
@@ -51,4 +54,16 @@ sudo apt-get install git
 cd ~/Downloads
 git clone https://github.com/AdnanHodzic/displaylink-debian.git
 cd displaylink-debian/ && sudo ./displaylink-debian.sh
+```
+-->
+
+Download the DisplayLink drivers here:
+https://www.synaptics.com/products/displaylink-graphics/downloads/ubuntu
+
+unpack and chmod +x
+
+then:
+
+```console
+sudo ./displaylink-driver-5.3.0.xx.run
 ```
