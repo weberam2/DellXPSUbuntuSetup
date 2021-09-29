@@ -72,6 +72,7 @@ sudo ./displaylink-driver-5.3.0.xx.run
 ```console
 sudo apt-get install deja-dup
 ```
+Go to folder you want restored, right click, and "Restore to Previous Version"
 
 ## Thunderbird
 
