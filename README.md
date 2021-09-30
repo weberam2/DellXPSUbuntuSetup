@@ -170,5 +170,6 @@ copy a config file from another computer
 sudo aptitude install htop
 sudo aptitude install xclip
 sudo aptitude install imagemagick
+sudo aptitude install smplayer
 ```
 
