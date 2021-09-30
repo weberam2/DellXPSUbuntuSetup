@@ -143,6 +143,28 @@ sudo apt upgrade
 sudo apt install libreoffice
 ```
 
+## Git
+
+```console
+sudo aptitude install git
+```
+
+## Bash-it
+
+```console
+git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
+~/.bash_it/install.sh
+```
+
+## Tmux
+
+```console
+sudo aptitude install tmux 
+git clone https://github.com/samoshkin/tmux-config.git
+./tmux-config/install.sh
+```
+copy a config file from another computer
+
 ## Misc
 ```console
 sudo aptitude install htop
