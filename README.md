@@ -165,6 +165,23 @@ git clone https://github.com/samoshkin/tmux-config.git
 ```
 copy a config file from another computer
 
+## Zotero
+
+https://www.zotero.org/download/
+
+https://www.zotero.org/support/installation
+
+```console
+tar -xvf Zotero-5.0.96.3_linux-x86_64.tar.bz2
+cd Zotero_linux-x86_64/
+./zotero
+cd ..
+sudo mv Zotero_linux-x86_64 /opt/Zotero
+cd /opt/Zotero/
+./set_launcher_icon
+ln -s /opt/Zotero/zotero.desktop ~/.local/share/applications/zotero.desktop
+```
+
 ## Misc
 ```console
 sudo aptitude install htop
