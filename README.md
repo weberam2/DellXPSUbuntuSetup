@@ -191,3 +191,20 @@ sudo aptitude install smplayer
 sudo aptitude install gimp
 ```
 
+## Global Protect
+https://hub.bcchr.ca/display/it/BCCHR+VPN+Setup?preview=/62457318/87884060/PanGPLinux-5.1.1-c17.tgz
+
+Edit the /etc/hosts:
+>192.168.34.174  CSPeirce  
+192.168.34.81  AdaL  
+192.168.34.141  Boltzmann  
+
+```console
+ssh-keygen
+```
+and
+```console
+ssh-copy-id username@computeraddress
+```
+
+
