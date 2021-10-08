@@ -189,6 +189,7 @@ sudo aptitude install xclip
 sudo aptitude install imagemagick
 sudo aptitude install smplayer
 sudo aptitude install gimp
+sudo aptitude install python3-pip
 ```
 
 ## Global Protect
@@ -206,5 +207,4 @@ and
 ```console
 ssh-copy-id username@computeraddress
 ```
-
 
