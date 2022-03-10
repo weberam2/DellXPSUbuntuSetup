@@ -208,3 +208,48 @@ and
 ssh-copy-id username@computeraddress
 ```
 
+## Fans and Sensors
+
+https://www.reddit.com/r/Dell/comments/gqas5s/best_configuration_for_a_silent_fan_with_xps_15/
+https://www.cyberciti.biz/faq/controlling-dell-fan-speeds-temperature-on-ubuntu-debian-linux/
+
+```console
+sudo modprobe -v i8k
+sudo apt-get install i8kutils
+cat /etc/i8kmon.conf
+```
+
+```
+ # Sample i8kmon configuration file (/etc/i8kmon.conf, ~/.i8kmon).
+ 
+ # External program to control the fans
+ set config(i8kfan)  /usr/bin/i8kfan
+ 
+ # Report status on stdout, override with --verbose option
+ set config(verbose) 0
+ 
+ # Status check timeout (seconds), override with --timeout option
+ set config(timeout) 2
+ # Temperature display unit (C/F), override with --unit option
+ set config(unit)    C
+ # Temperature threshold at which the temperature is displayed in red
+ set config(t_high)  85
+ # Minimum expected fan speed
+ set config(min_speed) 2000
+ 
+ # Temperature thresholds: {fan_speeds low_ac high_ac low_batt high_batt}
+ # These were tested on the I8000. If you have a different Dell laptop model
+ # you should check the BIOS temperature monitoring and set the appropriate
+ # thresholds here. In doubt start with low values and gradually rise them
+ # until the fans are not always on when the cpu is idle. 
+ set config(0)   {{0 0}  -1  70  -1  75}
+ set config(1)   {{0 1}  65  80  65  80}
+ set config(2)   {{1 1}  75  85  75  85}
+ set config(3)   {{2 2}  80 128  80 128}
+ 
+ # Speed values are set here to avoid i8kmon probe them at every time it starts.
+ set status(leftspeed)   "0 1250 2500 5000"
+ set status(rightspeed)  "0 1250 2500 5000"
+ 
+ # end of file
+ ```
