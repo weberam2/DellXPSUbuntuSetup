@@ -211,7 +211,10 @@ ssh-copy-id username@computeraddress
 ## Fans and Sensors
 
 https://www.reddit.com/r/Dell/comments/gqas5s/best_configuration_for_a_silent_fan_with_xps_15/
+
 https://www.cyberciti.biz/faq/controlling-dell-fan-speeds-temperature-on-ubuntu-debian-linux/
+
+https://askubuntu.com/questions/1227489/i8kctl-not-working-for-dell-inspiron-fan-control
 
 ```console
 sudo modprobe -v i8k
