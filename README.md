@@ -256,3 +256,18 @@ cat /etc/i8kmon.conf
  
  # end of file
  ```
+
+## Power
+
+### TLP
+
+```bash
+sudo apt install tlp tlp-rdw
+systemctl enable tlp.service
+sudo tlp start
+```
+
+### auto-cpufreq
+
+don't use this with TLLP. Pick one.
+https://github.com/AdnanHodzic/auto-cpufreq
