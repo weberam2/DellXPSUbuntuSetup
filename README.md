@@ -6,6 +6,22 @@ I found this handy: https://medium.com/@asad.manji/my-journey-installing-ubuntu-
 **NOTE: IF AT ANY TIME YOU GET THE BLACK SCREEN WITH A BLINKING CURSOR, PRESS CTRL+ALT+F# KEYS UNTIL THE LOGIN SCREEN APPEARS**
 https://askubuntu.com/questions/1251005/ubuntu-20-04-boots-to-black-screen-with-flashing-cursor
 
+Or if you get stuck at the beginning with something like "/dev/sda2: clean, ###/### files, ###/### blocks:
+
+- Ctrl+Alt+F2 which will lead you to a tty,
+- login into tty using username and password,
+- then, enter `sudo apt install --reinstall gnome gdm3`
+
+You may also need to purge nvidia* and install later:
+```console
+sudo apt-get purge nvidia*
+sudo add-apt-repository ppa:graphics-drivers
+sudo apt update
+sudo apt upgrade
+```
+
+see here: https://askubuntu.com/questions/850670/ubuntu-stuck-on-boot-wont-get-past-fsck
+
 ## Install Ubuntu 20.04
 Insert your bootable Ubuntu USB Stick, restart and hit F12 when you see the Dell logo to access the boot menu.  
 Once you’re into Ubuntu, click on the “Install Ubuntu” icon and follow the installer wizard.  
